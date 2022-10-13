@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;700;900&display=swap");
+
+body {
+  margin: 0;
+  background-color: #133428d6;
+  color: #f6d4c5;
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.number {
+  display: inline-block;
+  width: 6.8%;
+  aspect-ratio: 1/1;
+  border: 1px solid #f6d4c5;
+  border-radius: 4px;
+}
+
+.number h3 {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#bingoBoard {
+  padding-left: 35px;
+  margin-bottom: 35px;
+}
+
+button {
+  width: 6.8%;
+  aspect-ratio: 1/1;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+#generatedNumber {
+  width: 6.1%;
+  aspect-ratio: 1/1;
+  text-align: center;
+}
