@@ -49,4 +49,6 @@ const clickToGenerate = function () {
 const colorBingoNumber = function (random) {
   const bingoNumberNodes = document.getElementsByClassName("number");
   const numberNode = bingoNumberNodes[random - 1];
+  console.log(numberNode);
+  numberNode.style.backgroundColor = "red";
 };
