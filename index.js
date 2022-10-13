@@ -32,9 +32,10 @@ const clickToGenerate = function (event) {
 
 const colorBingoNumber = function () {
   const bingoNumberNode = document.getElementsByClassName("number");
+  console.log(bingoNumberNode);
   const inputNode = document.getElementById("generatedNumber");
   for (let i = 0; i < numberArray.length; i++) {
-    if (numberArray[i] === randomNumber()) {
+    if (numberArray[i] === inputNode.value) {
       child = bingoNumberNode.children[i];
       return (child.style.backgroundColor = "red");
     }
