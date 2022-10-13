@@ -20,24 +20,33 @@ const createBingoNumbers = function () {
 };
 
 const randomNumber = function () {
-  const number = Math.floor(Math.random() * 77);
+  const number = Math.ceil(Math.random() * 76);
   return number;
 };
 
-const clickToGenerate = function (event) {
+// const clickToGenerate = function (event) {
+//   const inputNode = document.getElementById("generatedNumber");
+//   const clickedNode = event.target;
+//   inputNode.value = randomNumber();
+// };
+
+const clickToGenerate = function () {
   const inputNode = document.getElementById("generatedNumber");
-  const clickedNode = event.target;
-  inputNode.value = randomNumber();
+  let random = randomNumber();
+  inputNode.value = random;
+  colorBingoNumber(random);
 };
 
-const colorBingoNumber = function () {
-  const bingoNumberNode = document.getElementsByClassName("number");
-  console.log(bingoNumberNode);
-  const inputNode = document.getElementById("generatedNumber");
-  for (let i = 0; i < numberArray.length; i++) {
-    if (numberArray[i] === inputNode.value) {
-      child = bingoNumberNode.children[i];
-      return (child.style.backgroundColor = "red");
-    }
-  }
+// const colorBingoNumber = function (random) {
+//   const bingoNumberNodes = document.querySelectorAll("h3");
+//   for (let i = 0; i < bingoNumberNodes.length; i++) {
+//     if (bingoNumberNodes[i].innerText === random) {
+//       bingoNumberNodes[i].style.backgroundColor = "red";
+//     }
+//   }
+// };
+
+const colorBingoNumber = function (random) {
+  const bingoNumberNodes = document.getElementsByClassName("number");
+  const numberNode = bingoNumberNodes[random - 1];
 };

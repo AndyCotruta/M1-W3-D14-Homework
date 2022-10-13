@@ -47,3 +47,7 @@ button {
   aspect-ratio: 1/1;
   text-align: center;
 }
+
+.redClass {
+  background-color: red;
+}
