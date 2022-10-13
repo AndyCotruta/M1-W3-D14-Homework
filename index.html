@@ -11,11 +11,17 @@
     <div class="container">
       <h1>Let's Play Bingo</h1>
       <div id="bingoBoard"></div>
+      <div id="bingoDesiredBoards"></div>
       <div id="generateRandomNumber">
         <div>
           <button id="clickToGenerate">GENERATE RANDOM NUMBER</button>
+          <input id="generatedNumber" type="text" value="EMPTY" />
+          <div>
+            <input id="desiredRounds" type="number" value="0" />
+            <button id="generateRounds">Let's Play</button>
+          </div>
+          <button id="resetButton">Reset Game</button>
         </div>
-        <div><input id="generatedNumber" type="text" value="EMPTY" /></div>
       </div>
       <script src="./index.js"></script>
     </div>
