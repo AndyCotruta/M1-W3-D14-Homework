@@ -43,7 +43,6 @@ const clickToGenerate = function () {
   inputNode.value = random;
   colorBingoNumber(random);
   colorGameNumber(random);
-  generatedNumberArray.push(random);
 };
 
 // const colorBingoNumber = function (random) {
@@ -79,10 +78,10 @@ const createBingoCards = function () {
     alert("Please select a number and then click the 'Let's play' button");
   } else {
     for (let i = 0; i < desiredRounds; i++) {
-      for (let i = 0; i < 24; i++) {
+      for (let i = 0; i < 25; i++) {
         const bingoNumberNode = document.createElement("div");
         bingoNumberNode.className = "numberDesired";
-        if (i === 23) {
+        if (i === 24) {
           const breakLine = document.createElement("br");
           breakLine.className = "breakLine";
           bingoCardNode.appendChild(breakLine);
